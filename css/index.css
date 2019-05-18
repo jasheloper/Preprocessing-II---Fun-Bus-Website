@@ -168,51 +168,42 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.funbus {
-  padding: 2rem;
-  margin: auto;
-  width: 800px;
-}
 @media (max-width: 500px) {
-  .funbus {
-    width: 480px;
+  .container {
+    width: 90%;
   }
 }
-.funbus h1 {
+.top {
+  border-bottom: 2px dashed #C0C0C0;
+  padding: 5rem;
+}
+@media (max-width: 500px) {
+  .top {
+    display: flex;
+    justify-content: center;
+  }
+}
+.top h1 {
   float: left;
 }
 @media (max-width: 500px) {
-  .funbus h1 {
-    margin: auto;
-    padding-top: 3rem;
-    padding-bottom: 1.5rem;
-    font-size: 3.7rem;
-  }
-}
-nav {
-  margin: auto;
-  padding: 4rem;
-  border-bottom: 2px dashed #C0C0C0;
-}
-@media (max-width: 500px) {
-  nav {
-    display: flex;
-    flex-direction: column;
+  .top h1 {
+    width: 200px;
     text-align: center;
-    padding: 1.4rem;
   }
 }
-nav a {
+.top nav {
   float: right;
+}
+.top nav a {
   padding: 1rem;
+  font-size: 1.7rem;
   text-decoration: none;
   color: #212529;
-  font-size: 1.6rem;
 }
-@media (max-width: 500px) {
-  nav a {
-    padding: 2.4rem;
-  }
+.top .info {
+  margin: auto;
+  width: 700px;
 }
 .footer {
   width: 100%;
