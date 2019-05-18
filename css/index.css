@@ -169,24 +169,50 @@ img {
   margin: 0 auto;
 }
 .funbus {
+  padding: 2rem;
   margin: auto;
-  width: 790px;
+  width: 800px;
+}
+@media (max-width: 500px) {
+  .funbus {
+    width: 480px;
+  }
+}
+.funbus h1 {
+  float: left;
+}
+@media (max-width: 500px) {
+  .funbus h1 {
+    margin: auto;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    font-size: 3.7rem;
+  }
 }
 nav {
   margin: auto;
   padding: 4rem;
-  text-align: right;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.4rem;
+  }
+}
 nav a {
+  float: right;
   padding: 1rem;
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
 }
-nav h1 {
-  float: left;
-  display: inline-block;
+@media (max-width: 500px) {
+  nav a {
+    padding: 2.4rem;
+  }
 }
 .footer {
   width: 100%;

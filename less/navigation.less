@@ -1,25 +1,50 @@
 // Navigation Styles here
 
 .funbus {
+    padding: 2rem;
     margin: auto;
-    width: 790px;
-}
+    width: 800px;
 
-nav {
-    margin: auto;
-    padding: 4rem;
-    text-align: right;
-    border-bottom: 2px dashed @silver;
-
-    a {
-        padding: 1rem;
-        text-decoration: none;
-        color: @font-color;
-        font-size: 1.6rem;
+    @media @mobile {
+        width: 480px; 
     }
 
     h1 {
         float: left;
-        display: inline-block;
+        @media @mobile {
+            margin: auto;
+            padding-top: 3rem;
+            padding-bottom: 1.5rem;
+            font-size: 3.7rem;
+        }
     }
+}
+
+
+
+nav {
+    margin: auto;
+    padding: 4rem;
+    border-bottom: 2px dashed @silver;
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1.4rem; 
+    }
+
+    a {
+        float: right;
+        padding: 1rem;
+        text-decoration: none;
+        color: @font-color;
+        font-size: 1.6rem;
+
+        @media @mobile {
+            padding: 2.4rem;
+        }
+    }
+
+
 }
