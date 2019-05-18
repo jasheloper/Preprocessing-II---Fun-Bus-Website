@@ -1,34 +1,38 @@
-.top {
+.top-box {
+    display: flex;
+    padding: 2rem;
     border-bottom: 2px dashed @silver;
-    padding: 5rem;
 
     @media @mobile {
-        display: flex;
-        justify-content: center;
+        flex-direction: column;
+        padding-bottom: 0;
     }
-
-    h1 {
-        float: left;
+   
+h1 {
+    margin: auto;
 
     @media @mobile {
-      width: 200px;
-      text-align: center;
+        padding: 0;
     }
+}
+
+nav {
+    padding: 2rem;
+    margin: auto;
+    
+    @media @mobile {
+        padding: 0;
     }
 
-    nav {
+    a {
         float: right;
-
-        a {
-            padding: 1rem;
-            font-size: 1.7rem;
-            text-decoration: none;
-            color: @shark;
-        }
+        text-decoration: none;
+        font-size: 1.6rem;
+        padding: 1.8rem;
+        color: @shark;
+        
     }
+}
 
-    .info {
-        margin: auto;
-        width: 700px;
-    }
+
 }

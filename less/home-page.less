@@ -12,6 +12,12 @@
     }
 
     border-bottom: 2px dashed @silver;
+
+    img {
+      @media @mobile {
+        border-radius: 0;
+      }
+    }
   }
 
   .content-section {
@@ -20,22 +26,44 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+      flex-direction: column;
+
+    }
+  
     
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+
+      @media @mobile {
+        width: 100%;
+      }
+
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        border-radius: 3rem; 
+      }
+
+
       img {
         border-radius: 10px;
+
       }
+
+
+      @media @mobile {
+        border-radius: 3rem;
+      }
+
+    }
     }
   }
+  
 
   .inverse-content {
     padding-bottom: 30px;
@@ -44,17 +72,39 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @mobile {
+        flex-direction: column-reverse;
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
     }
+
+    .rounded {
+      display: none;
+
+      @media @mobile {
+        display: block; 
+      }
+
+      .img-fluid {
+        @media @mobile {
+          display: none;
+        }
+      }
+    }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width: 100%;
+    }
 
     img {
       border-radius: 10px;
@@ -67,9 +117,17 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     /*Buttons*/
@@ -80,6 +138,12 @@
       width: 189px;
       text-align: center;
       font-size: 1.8rem;
+
+      @media @mobile {
+        width: 400px;
+      }
+
+  
     }
 
   }
