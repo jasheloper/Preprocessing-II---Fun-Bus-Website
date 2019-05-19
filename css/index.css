@@ -162,6 +162,8 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 2rem;
+  padding: 0.3rem;
 }
 @media (max-width: 500px) {
   img {
@@ -175,7 +177,12 @@ img {
 }
 @media (max-width: 500px) {
   .container {
-    width: 90%;
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    width: 70%;
   }
 }
 .top-box {
@@ -185,25 +192,31 @@ img {
 }
 @media (max-width: 500px) {
   .top-box {
-    flex-direction: column;
+    width: 478px;
     padding-bottom: 0;
   }
 }
 .top-box h1 {
-  margin: auto;
+  display: inline;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .top-box h1 {
-    padding: 0;
+    font-size: 6rem;
+    margin-right: 4rem;
+    display: block;
+    padding: 0.8rem;
   }
 }
 .top-box nav {
-  padding: 2rem;
+  width: 800px;
   margin: auto;
 }
 @media (max-width: 500px) {
   .top-box nav {
-    padding: 0;
+    margin: auto;
+    width: 100%;
+    padding: 1.7rem;
   }
 }
 .top-box nav a {
@@ -212,6 +225,11 @@ img {
   font-size: 1.6rem;
   padding: 1.8rem;
   color: #212529;
+}
+@media (max-width: 500px) {
+  .top-box nav a {
+    float: none;
+  }
 }
 .footer {
   width: 100%;
@@ -272,11 +290,6 @@ img {
 .home .content-section .text-content .img-content img {
   border-radius: 10px;
 }
-@media (max-width: 500px) {
-  .home .content-section .text-content .img-content {
-    border-radius: 3rem;
-  }
-}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -294,17 +307,17 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    display: none;
+  }
+}
 .home .inverse-content .rounded {
   display: none;
 }
 @media (max-width: 500px) {
   .home .inverse-content .rounded {
     display: block;
-  }
-}
-@media (max-width: 500px) {
-  .home .inverse-content .rounded .img-fluid {
-    display: none;
   }
 }
 .home .content-destination {
@@ -329,6 +342,8 @@ img {
 @media (max-width: 500px) {
   .home .content-pick {
     flex-direction: column;
+    width: 400px;
+    margin: auto;
   }
 }
 .home .content-pick .destination {
@@ -352,6 +367,6 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick .btn {
-    width: 400px;
+    width: 370px;
   }
 }

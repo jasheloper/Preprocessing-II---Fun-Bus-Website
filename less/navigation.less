@@ -4,33 +4,54 @@
     border-bottom: 2px dashed @silver;
 
     @media @mobile {
-        flex-direction: column;
+      width: 478px;
         padding-bottom: 0;
     }
+
+   
+
+
    
 h1 {
-    margin: auto;
+  
+    display: inline;
+    text-align: center;
+  
 
     @media @mobile {
-        padding: 0;
+        font-size: 6rem;
+        margin-right: 4rem;
+        display: block;
+        padding: .8rem;
     }
+
+
+
 }
 
 nav {
-    padding: 2rem;
+    width: 800px;
     margin: auto;
     
     @media @mobile {
-        padding: 0;
+        margin: auto;
+        width: 100%;
+        padding: 1.7rem;
     }
 
+   
+
     a {
-        float: right;
+        float: right; 
         text-decoration: none;
         font-size: 1.6rem;
         padding: 1.8rem;
         color: @shark;
         
+      @media @mobile {
+          float: none;
+          
+      }
     }
 }
 
