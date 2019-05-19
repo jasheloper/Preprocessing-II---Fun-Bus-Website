@@ -1,3 +1,20 @@
+# Project Details
+
+<b>Objectives:</b><br />
+Student should be able to create parametric mixins, use functions, and incorporate escaping and create a master LESS file and use importing to create a project.
+
+*Completed all Minimal Viable Project Tasks*
+
+
+<a href="http://jasheletillman.me/Preprocessing-II---Fun-Bus-Website/"><img src="img/funbus_preview.png" alt=""></a> <a href="http://jasheletillman.me/Preprocessing-II---Fun-Bus-Website/"><img src="img/funbusmobil.png" alt=""></a>
+
+
+
+# Contact Me
+<a href="http://jasheletillman.me/" target=_blank>Portfolio</a> • <a href="https://www.linkedin.com/in/jashelet/" target=_blank>LinkedIn</a> • <a href="https://twitter.com/jasheloper" target=_blank>Twitter</a> • <a href="https://www.instagram.com/jasheloper/" target=_blank>Instagram</a> • <a href="mailto:jftjashele@gmail.com" target=_blank>E-mail</a> 
+<br /><br />
+
+
 # Preprocessing II: Fun Bus Website
 
 Fun Bus is a travel agency looking for some help on their website.  They want a new navigation, new header, and new buttons on the home page. They also want a mobile version of their site styled.  Use your preprocessing knowledge to accomplish their tasks.
